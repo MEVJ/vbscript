@@ -50,7 +50,7 @@ Sub Mail_ActiveSheet()
 
     'Save the new workbook/Mail it/Delete it
     TempFilePath = Environ$("temp") & "\"
-    TempFileName = Sourcewb.Name & " " & Format(Now, "dd-mmm-yy h-mm-ss")
+    TempFileName = Sourcewb.Name
 
     Set OutApp = CreateObject("Outlook.Application")
     Set OutMail = OutApp.CreateItem(0)
